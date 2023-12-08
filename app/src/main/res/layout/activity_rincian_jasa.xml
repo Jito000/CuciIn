@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity_rincianJasa">
+    <RelativeLayout
+        android:id="@+id/rl_rincianJasa"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/whiteDark">
+        <ImageView
+            android:id="@+id/iv_kembali_rincianJasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_margin="12dp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_below="@id/rl_rincianJasa">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_namaLaundry_klikToko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:text="Nama laudry"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_alamat_klikToko"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:textSize="12sp"
+                    android:text="Alamat"
+                    android:textColor="@color/fontColor" />
+
+                <TextView
+                    android:id="@+id/tv_biaya_klikToko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya"
+                    android:textSize="16sp"
+                    android:textColor="@color/fontColor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="12dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@color/fontColor"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tampilDeskripsi_rincianJasa"
+                android:text="Deskripsi"
+                android:textColor="@color/fontColor"
+                android:layout_marginHorizontal="36dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/fontColor"
+                android:text="Ulasan"
+                android:layout_margin="20dp" />
+            <EditText
+                android:id="@+id/tv_refresh_rincianJasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tampil Ulasan"
+                android:textColor="@color/fontColor"
+                android:visibility="visible"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view_rincianJasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_cuciSekarang_klikToko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuci Sekarang"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_margin="6dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

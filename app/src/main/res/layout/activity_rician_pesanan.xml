@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity_rincianPesanan">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/whiteDark"
+        android:layout_marginHorizontal="12dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="36dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sukses!"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:id="@+id/tv_namaLaundry_tampilrincianPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Laundry"
+                android:textColor="@color/fontColor"
+                android:layout_marginTop="36dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_alamat_tampilrincianPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pembayaran"
+                android:textColor="@color/fontColor"
+                android:textSize="20sp"
+                android:layout_marginTop="36dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar di Toko"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bawa cucian anda ke toko dan tunjukkan bukti pemesanan  untuk input berat cucian anda"
+                android:textColor="@color/fontColor"
+                android:textSize="12sp"
+                android:layout_marginTop="36dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Kode Pesanan"
+                android:textColor="@color/fontColor"
+                android:textSize="18sp"
+                android:layout_marginTop="36dp"/>
+            <TextView
+                android:id="@+id/tv_kodeBayar_tampilrincianPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tidak ada"
+                android:textColor="@color/fontColor"
+                android:textSize="30sp"
+                android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btn_selesai_tampilrincianPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

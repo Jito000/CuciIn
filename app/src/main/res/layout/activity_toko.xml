@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activity_toko">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ib_back_toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/mini_photo" />
+
+        <Button
+            android:id="@+id/btn_buat_toko"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="+ Buat Jasa Anda"
+            android:textAllCaps="false"
+            android:textColor="@color/fontColor" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_uploadGambar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        android:elevation="6dp"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Gambar"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/fontColor"
+            android:background="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="Tambah >"
+            android:textColor="@color/fontColor" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:src="@drawable/mini_photo"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        android:elevation="6dp"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="Daftar pesanan"
+            android:textColor="@color/fontColor" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout_Toko"/>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_dataDiri"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/default_background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="20dp"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_logo"
+            android:layout_margin="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Diri"
+        android:textColor="@color/fontColor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Depan"
+        android:textColor="@color/fontColor"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="24dp"/>
+    <EditText
+        android:id="@+id/et_namaDepan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/fontColor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Belakang"
+        android:textColor="@color/fontColor"
+        android:layout_marginHorizontal="48dp"/>
+    <EditText
+        android:id="@+id/et_namaBelakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/fontColor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal lahir"
+        android:textColor="@color/fontColor"
+        android:layout_marginHorizontal="48dp"/>
+    <Spinner
+        android:id="@+id/spinner_hari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="10dp"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:textColor="@color/fontColor"
+        android:entries="@array/tanggal" />
+    <Spinner
+        android:id="@+id/spinner_bulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="10dp"
+        android:entries="@array/bulan" />
+    <Spinner
+        android:id="@+id/spinner_tahun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:textColor="@color/fontColor"
+        android:padding="10dp"
+        android:entries="@array/tahun" />
+
+    <ProgressBar
+        android:id="@+id/pb_dataDiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?android:attr/color"
+        android:theme="@style/AppTheme"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Simpan"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/custom_button"/>
+
+</LinearLayout>

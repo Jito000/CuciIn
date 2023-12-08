@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background"
+    tools:context=".activity_menu">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/mini_photo"
+            android:id="@+id/iv_photo"/>
+        <TextView
+            android:id="@+id/tv_namaDepan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_alignLeft="@id/iv_photo"
+            android:textSize="20sp"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="bottom"/>
+
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="144dp"
+            android:src="@drawable/ic_baseline_store_24"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorHeight="35dp"
+        app:tabIndicator="@drawable/tab_item"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabGravity="fill"
+        app:tabIndicatorGravity="center"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabMode="fixed">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:icon="@drawable/history" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:icon="@drawable/home" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:icon="@drawable/chat"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vpager"
+        android:layout_below="@id/tab_layout">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

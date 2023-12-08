@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "275315497575",
+    "firebase_url": "https://cuciin-by-laundrygrup.firebaseio.com",
+    "project_id": "cuciin-by-laundrygrup",
+    "storage_bucket": "cuciin-by-laundrygrup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275315497575:android:dbc0cda99573d2e31a52c2",
+        "android_client_info": {
+          "package_name": "com.LaundryGrup.cuciin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275315497575-2agro7h58c9k1981vk9ek4jjtv4aifrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr0xgMZ_kgQSdArliNknqONlOYzQpKtU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275315497575-2agro7h58c9k1981vk9ek4jjtv4aifrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275315497575:android:69744d3c9cbc58a61a52c2",
+        "android_client_info": {
+          "package_name": "com.laundrygrup.cuciin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275315497575-2agro7h58c9k1981vk9ek4jjtv4aifrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr0xgMZ_kgQSdArliNknqONlOYzQpKtU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275315497575-2agro7h58c9k1981vk9ek4jjtv4aifrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

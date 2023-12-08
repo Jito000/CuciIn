@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.laundrygrup.cuciin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/default_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".activity_ulasan"></activity>
+        <activity android:name=".activity_deskripsiPesanan" />
+        <activity android:name=".activity_updatePesanan" />
+        <activity android:name=".activity_loading" />
+        <activity android:name=".activity_rincianPesanan" />
+        <activity android:name=".activity_pembayaran" />
+        <activity android:name=".activity_pesanJasa" />
+        <activity android:name=".activity_rincianJasa" />
+        <activity android:name=".activity_bukaToko_deskripsi" />
+        <activity android:name=".activity_bukaToko_telp" />
+        <activity android:name=".activity_bukaToko_alamat" />
+        <activity android:name=".activity_bukaToko_biayaJasa" />
+        <activity android:name=".activity_bukaToko_namaToko" />
+        <activity android:name=".activity_bukaToko" />
+        <activity android:name=".activity_toko" />
+        <activity android:name=".activity_menu" />
+        <activity
+            android:name=".fragment_menu_daftarPesanan"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".fragment_menu_jasaCucian"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".fragment_chat"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".activity_dataDiri" />
+        <activity android:name=".activity_lupaPassword" />
+        <activity android:name=".activity_daftar" />
+        <activity android:name=".activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
